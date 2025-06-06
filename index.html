@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Barajas Exterior Services</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     :root {
       --earth-green: #5f7a4d;
@@ -73,7 +78,15 @@
 
     .hero::before {
       content: "";
-      background: none;
+      background: url('barajas-logo.png') center center / contain no-repeat;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0.1;
+      width: 300px;
+      height: 300px;
+      z-index: 0;
     }
 
     .hero h2, .hero p {
@@ -99,6 +112,7 @@
       border-radius: 4px;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
     }
 
     .images-row {
@@ -167,6 +181,35 @@
       font-weight: bold;
     }
 
+    .testimonials {
+      background-color: var(--white);
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonials h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: var(--earth-green);
+    }
+
+    .testimonials blockquote {
+      border-left: 4px solid var(--earth-green);
+      margin: 1rem 0;
+      padding-left: 1rem;
+      font-style: italic;
+      color: #555;
+    }
+
+    .testimonials footer {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      color: var(--earth-brown);
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
@@ -199,21 +242,26 @@
 
   <section class="hero">
     <h2>Barajas Exterior Services</h2>
-    <img src="images/barajas-logo.png" alt="Barajas Logo" class="logo" />
+    <img src="barajas-logo.png" alt="Barajas Logo" class="logo" />
     <p><a href="#contact" class="btn">Get a Free Quote</a></p>
+    <p>
+      <a href="https://www.facebook.com/barajasexteriorservices" class="btn" target="_blank">
+        <i class="fab fa-facebook"></i> Book Now on Facebook
+      </a>
+    </p>
   </section>
 
   <div class="images-row">
     <figure>
-      <img src="images/power-washing-wooden-deck-1.jpg" alt="Pressure Washing">
+      <img src="power-washing-wooden-deck-1.jpg" alt="Pressure Washing">
       <figcaption>Restore the natural beauty of your wood and hard surfaces with our powerful pressure washing services.</figcaption>
     </figure>
     <figure>
-      <img src="images/tab-styled-roof-shingles-royalty-free-image-1681761628.jpg" alt="Roof Services">
+      <img src="tab-styled-roof-shingles-royalty-free-image-1681761628.jpg" alt="Roof Services">
       <figcaption>Protect your home from the top down with seasonal roof care and inspection.</figcaption>
     </figure>
     <figure>
-      <img src="images/668c639da8b82d67b5e04972_AdobeStock_325577909.jpeg" alt="Gutter Cleaning">
+      <img src="668c639da8b82d67b5e04972_AdobeStock_325577909.jpeg" alt="Gutter Cleaning">
       <figcaption>Keep your gutters flowing freely and your foundation safe with professional cleaning services.</figcaption>
     </figure>
   </div>
@@ -235,6 +283,22 @@
     </ul>
   </section>
 
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Customers Are Saying</h2>
+    <blockquote>
+      <p>"Barajas Exterior Services transformed our patio. It looks brand new again!"</p>
+      <footer>— Jessica R.</footer>
+    </blockquote>
+    <blockquote>
+      <p>"Reliable and professional. They cleaned our gutters just in time for the rainy season."</p>
+      <footer>— Mark T.</footer>
+    </blockquote>
+    <blockquote>
+      <p>"Great service, fair prices, and outstanding results. Highly recommend!"</p>
+      <footer>— Angela P.</footer>
+    </blockquote>
+  </section>
+
   <section id="contact" class="contact-form">
     <h2>Contact</h2>
     <form action="mailto:BarajasExteriorServices@gmail.com" method="POST" enctype="text/plain">
@@ -254,7 +318,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
