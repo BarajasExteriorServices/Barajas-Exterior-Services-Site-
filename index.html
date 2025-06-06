@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,12 +59,29 @@
     }
 
     .hero {
-      background: url('logo.png') center center no-repeat;
-      background-size: contain;
       background-color: var(--earth-green);
       color: var(--white);
       text-align: center;
-      padding: 5rem 1rem;
+      padding: 3rem 1rem;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      background: url('images/barajas-logo.png') center center no-repeat;
+      background-size: 300px;
+      opacity: 0.1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+
+    .hero h2, .hero p {
+      position: relative;
+      z-index: 1;
     }
 
     .hero h2 {
@@ -73,6 +91,7 @@
       display: inline-block;
       padding: 0.5rem 1rem;
       border-radius: 8px;
+      font-family: 'Oswald', sans-serif;
     }
 
     .hero .btn {
@@ -188,15 +207,15 @@
 
   <div class="images-row">
     <figure>
-      <img src="/mnt/data/power-washing-wooden-deck-1.jpg" alt="Pressure Washing">
+      <img src="images/power-washing-wooden-deck-1.jpg" alt="Pressure Washing">
       <figcaption>Restore the natural beauty of your wood and hard surfaces with our powerful pressure washing services.</figcaption>
     </figure>
     <figure>
-      <img src="/mnt/data/tab-styled-roof-shingles-royalty-free-image-1681761628.jpg" alt="Roof Services">
+      <img src="images/tab-styled-roof-shingles-royalty-free-image-1681761628.jpg" alt="Roof Services">
       <figcaption>Protect your home from the top down with seasonal roof care and inspection.</figcaption>
     </figure>
     <figure>
-      <img src="/mnt/data/668c639da8b82d67b5e04972_AdobeStock_325577909.jpeg" alt="Gutter Cleaning">
+      <img src="images/668c639da8b82d67b5e04972_AdobeStock_325577909.jpeg" alt="Gutter Cleaning">
       <figcaption>Keep your gutters flowing freely and your foundation safe with professional cleaning services.</figcaption>
     </figure>
   </div>
