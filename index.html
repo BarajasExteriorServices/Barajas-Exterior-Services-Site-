@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Barajas Exterior Services</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --earth-green: #5f7a4d;
@@ -32,18 +33,22 @@
       color: var(--white);
       padding: 1rem 2rem;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+      flex-direction: column;
     }
 
     header h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      font-family: 'Oswald', sans-serif;
+      text-align: center;
     }
 
     nav {
       display: flex;
       gap: 1rem;
+      margin-top: 0.5rem;
     }
 
     nav a {
@@ -53,15 +58,21 @@
     }
 
     .hero {
+      background: url('logo.png') center center no-repeat;
+      background-size: contain;
       background-color: var(--earth-green);
       color: var(--white);
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 5rem 1rem;
     }
 
     .hero h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
+      background-color: rgba(95, 122, 77, 0.8);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
     }
 
     .hero .btn {
@@ -151,7 +162,7 @@
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
       }
 
       .images-row {
@@ -171,21 +182,21 @@
   </header>
 
   <section class="hero">
-    <h2>Bringing Curb Appeal Back to Your Property</h2>
-    <a href="#contact" class="btn">Get a Free Quote</a>
+    <h2>Barajas Exterior Services</h2>
+    <p><a href="#contact" class="btn">Get a Free Quote</a></p>
   </section>
 
   <div class="images-row">
     <figure>
-      <img src="power-washing-wooden-deck-1.jpg" alt="Pressure Washing">
+      <img src="/mnt/data/power-washing-wooden-deck-1.jpg" alt="Pressure Washing">
       <figcaption>Restore the natural beauty of your wood and hard surfaces with our powerful pressure washing services.</figcaption>
     </figure>
     <figure>
-      <img src="tab-styled-roof-shingles-royalty-free-image-1681761628.jpg" alt="Roof Services">
+      <img src="/mnt/data/tab-styled-roof-shingles-royalty-free-image-1681761628.jpg" alt="Roof Services">
       <figcaption>Protect your home from the top down with seasonal roof care and inspection.</figcaption>
     </figure>
     <figure>
-      <img src="668c639da8b82d67b5e04972_AdobeStock_325577909.jpeg" alt="Gutter Cleaning">
+      <img src="/mnt/data/668c639da8b82d67b5e04972_AdobeStock_325577909.jpeg" alt="Gutter Cleaning">
       <figcaption>Keep your gutters flowing freely and your foundation safe with professional cleaning services.</figcaption>
     </figure>
   </div>
@@ -223,3 +234,6 @@
 
   <footer>
     <p>&copy; 2025 Barajas Exterior Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
