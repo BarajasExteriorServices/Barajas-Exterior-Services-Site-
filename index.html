@@ -176,11 +176,24 @@
     }
 
     @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .images-row {
+    justify-content: flex-start;
+  }
+
+  .hero img.logo {
+    width: 100px;
+  }
+
+  .hero::before {
+    width: 180px;
+    height: 180px;
+  }
+}
       nav a {
     padding: 0.5rem;
     font-size: 1.2rem;
