@@ -146,7 +146,13 @@
     <div class="ba-container">
       <img src="images/before-roof(2).JPG" alt="Before Roof Cleaning">
       <img src="images/after-roof(2).JPG" alt="After Roof Cleaning" class="after">
-      <input type="range" min="0" max="100" value="50" oninput="this.previousElementSibling.style.clipPath='inset(0 '+(100-this.value)+'% 0 0)'">
+        <input   type="range"
+  min="0"
+  max="100"
+  value="50"
+  oninput="this.previousElementSibling.style.clipPath='inset(0 '+(100-this.value)+'% 0 0)'"
+  style="position: absolute; bottom: 10px; left: 0; width: 100%; height: 30px; background: transparent; cursor: ew-resize; z-index: 10;"
+ 
     </div>
   </section>
 
